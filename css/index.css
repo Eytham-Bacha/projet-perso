@@ -1,0 +1,304 @@
+@media (min-width: 500px) {
+  .logo {
+    margin-top: -40px;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.custom-container {
+  position: relative;
+  width: 100%;
+  height: 95vh;
+  background-image: url(https://res.cloudinary.com/planity/image/upload/w_1120,f_auto/68c81554-317e-45db-9945-2be8aa81cdd9);
+  background-size: cover;
+  background-position: center;
+}
+.texte {
+  position: absolute;
+  top: 70%;
+  left: 10%;
+
+  color: white;
+  font-size: 24px;
+  text-align: center;
+}
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-toggler {
+  border: 2px solid white;
+  box-shadow: 0 0 4px white;
+}
+.navbar-toggler:hover {
+  transform: scale(1.1); /* Zoom de 10% au survol */
+}
+
+.navbar-brand {
+  font-family: "Times New Roman", Times, serif;
+  font-size: xx-large;
+}
+.logo {
+  animation: spin 5s infinite linear;
+
+  position: fixed;
+  width: 110px;
+  height: 150px;
+  margin-top: -30px;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+.navbar {
+  background-color: rgba(128, 128, 128, 0.5);
+}
+.btn:hover {
+  border: 2px solid white;
+  box-shadow: 0 0 4px white;
+  animation-play-state: paused;
+}
+
+.btn {
+  background-color: black;
+  border: 2px solid white;
+  box-shadow: 0 0 4px white;
+  color: white;
+  transition: background-color 0.3s, transform 0.3s;
+  animation: zoom 1s infinite; /* Ajoute une transition fluide 
+}
+
+.btn:active {
+    transform: scale(0.9); /* Réduction de 10% lorsqu'il est cliqué */
+}
+@keyframes zoom {
+  0% {
+    transform: scale(1); /* Taille normale */
+  }
+  50% {
+    transform: scale(1.1); /* Zoom de 10% */
+  }
+  100% {
+    transform: scale(1); /* Retour à la taille normale */
+  }
+}
+.titre {
+  position: absolute;
+  top: 20%;
+
+  color: white;
+
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: xx-large;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+}
+
+.espace {
+  margin-right: 40px;
+}
+
+.adre {
+  margin-right: 50px;
+}
+
+.des {
+  color: white;
+}
+
+.apr {
+  color: white;
+}
+
+.adresse {
+  color: white;
+}
+
+.des:hover {
+  color: black;
+}
+
+.apr:hover {
+  color: black;
+}
+
+.adresse:hover {
+  color: black;
+}
+.abba {
+  background-color: rgba(128, 128, 128);
+  height: 100vh;
+}
+.scrolling-image-container {
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  overflow: hidden;
+}
+
+.scrolling-image {
+  position: relative;
+  width: 100%;
+  height: auto;
+  transform: translateY(0%);
+  transition: transform 0.3s ease-out;
+}
+
+.custom-url {
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  background-image: url(https://res.cloudinary.com/planity/image/upload/w_1120,f_auto/40679656-f0aa-4d76-b637-fe14e198e169);
+  background-size: cover;
+  background-position: center;
+}
+.custom-container,
+.custom-url {
+  background-attachment: fixed;
+}
+
+.scrolling-image-container {
+  position: relative;
+  width: 100%;
+  height: 60vh;
+  background-image: url(https://img.freepik.com/photos-gratuite/client-faisant-cheveux-coupes-dans-salon-coiffure_1303-20719.jpg?w=740&t=st=1685002395~exp=1685002995~hmac=9796652a2e43ae473a40e2cb8445905ce17f0619fd12fd43756daa99bea1f933);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.descipt {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.svg-icon {
+  fill: white;
+}
+.txt {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  right: -38%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-family: "Courgette", cursive;
+  font-size: xx-large;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+}
+.reserv {
+  background-color: black;
+  opacity: 0.8;
+  color: white;
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: xx-large;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+  padding-bottom: 5%;
+}
+
+.svg-resa {
+  fill: white;
+  margin-top: 5%;
+}
+
+.sec {
+  margin-top: 1%;
+  font-size: medium;
+}
+
+footer {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
+
+.coiff {
+  text-align: left;
+  font-size: medium;
+}
+.coup {
+  text-align: left;
+  font-size: medium;
+}
+.pri {
+  text-align: right;
+  font-size: medium;
+}
+
+#aprop {
+  background-color: white;
+  padding-top: 4%;
+  margin-bottom: 5%;
+  font-family:  'Asap', sans-serif;
+}
+.devan {
+  background-color: white;
+}
+
+.titl {
+  text-align: center;
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: x-large;
+}
+
+.description {
+  font-size: large;
+}
+
+#notradr {
+  background-color: black;
+  opacity: 0.8;
+  color: white;
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: xx-large;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+}
+
+.notre-adresse {
+  font-size: small;
+}
+.css-nil{
+  margin-top: 5%;
+  fill: white;
+}
+
+a:visited {
+  color: white;
+}
+
+/* Choisir la couleur d'un lien pas encore visité */
+a:link {
+  color: white;
+}
+
+/* Choisir la couleur d'un lien quand on le survole*/
+a:hover {
+  color: red;
+}
+.map {
+  width: 60%;
+  height: 400px;
+  
+}
+
+.container-horaire {
+  max-width: 50%;
+  border: 1px solid black;
+}
