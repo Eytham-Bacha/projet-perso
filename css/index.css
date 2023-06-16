@@ -114,10 +114,53 @@ body {
 .des {
   color: white;
 }
-
 .apr {
-  color: white;
+  position: relative;
+  display: inline-block;
+  padding: 5px;
+  color: #000; /* Couleur du texte */
+  font-size: 18px; /* Taille de la police */
+  font-weight: bold; /* Poids de la police */
+  text-decoration: none;
 }
+
+.apr:before,
+.apr:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: #007bff; /* Couleur de l'effet */
+  transition: width 0.3s;
+}
+
+.apr:before {
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.apr:after {
+  bottom: 0;
+  right: 50%;
+  transform: translateX(50%);
+}
+
+.apr:hover:before,
+.apr:hover:after {
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+/* .apr {
+  color: white;
+} */
 
 .adresse {
   color: white;
@@ -127,9 +170,9 @@ body {
   color: black;
 }
 
-.apr:hover {
+/* .apr:hover {
   color: black;
-}
+} */
 
 .adresse:hover {
   color: black;
@@ -302,3 +345,8 @@ a:hover {
   max-width: 50%;
   border: 1px solid black;
 }
+
+
+ .devan{
+  float: inline-end;
+ }
