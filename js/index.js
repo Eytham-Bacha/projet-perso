@@ -1,11 +1,15 @@
-function initMap() {
-    var mapOptions = {
-      center: { lat: 45.7745828, lng: 3.0822042},
-      zoom: 10, // Adjust the zoom level as needed
-    };
+document.addEventListener('DOMContentLoaded', function() {
+    var links = document.getElementsByClassName('nav-link');
+  
+    for (var i = 0; i < links.length; i++) {
+      links[i].addEventListener('click', function() {
+        var offcanvasNavbar = document.getElementById('offcanvasNavbar');
+        var offcanvas = bootstrap.Offcanvas.getInstance(offcanvasNavbar);
+        offcanvas.hide();
+      });
+    }
+  });
+  
 
-    var map = new google.maps.Map(document.getElementById('map'), mapOptions);
-  }
 
-  // Call the initMap function when the page has finished loading
-  google.maps.event.addDomListener(window, 'load', initMap);
+console.log("Mon fichier JavaScript est relié !");
